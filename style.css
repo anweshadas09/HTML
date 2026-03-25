@@ -9,6 +9,16 @@
 body {
   color: #555; /* Steel Gray */
   font-family: "Roboto", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #eef4ff 0%, #d9e9ff 30%, #f4f7ff 100%);
+  min-height: 100vh;
+}
+
+header,
+section {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(20, 48, 84, 0.13);
 }
 
 .navbar-brand {
@@ -67,6 +77,40 @@ p {
   background-color: #0a58ca !important;
   border: none;
   color: #fff !important;
+}
+
+.btn-3d {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(145deg, #0a58ca, #347fff);
+  box-shadow: 0 8px 16px rgba(10, 88, 202, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.btn-3d:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(10, 88, 202, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  filter: brightness(1.06);
+}
+
+.btn-3d:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(10, 88, 202, 0.35), inset 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.7;
 }
 
 .footer-section {
